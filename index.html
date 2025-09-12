@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>海洋声学虚拟仿真实验教学平台 | 案例网站</title>
+  <meta name="description" content="用于高校虚拟仿真实验教学案例的展示：特色与创新、目标与实施、教学效果、总结与反思、材料下载与团队信息。" />
+  <style>
+    :root{
+      --bg:#0f172a;--fg:#e2e8f0;--muted:#94a3b8;--brand:#22d3ee;--card:#111827;--accent:#a78bfa;--ok:#34d399;--warn:#fbbf24;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif;background:linear-gradient(180deg,#0b1022,#0f172a);color:var(--fg);}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px);background:rgba(10,13,24,.6);border-bottom:1px solid #1f2937;z-index:50}
+    .wrap{max-width:1100px;margin:auto;padding:0 20px}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .nav .brand{display:flex;gap:10px;align-items:center;font-weight:700}
+    .nav .brand .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--accent));display:grid;place-items:center;color:#0b1022;font-weight:800}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid #334155;border-radius:14px;background:#0b1022}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--accent));color:#0b1022;font-weight:700;border:none}
+
+    .hero{padding:56px 0 42px;border-bottom:1px solid #1f2937}
+    .hero h1{font-size:32px;margin:10px 0}
+    .hero p{color:var(--muted);max-width:780px;line-height:1.6;margin:0}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+    .chip{padding:6px 10px;border:1px solid #334155;border-radius:999px;color:var(--muted);font-size:14px}
+
+    section{padding:38px 0;border-bottom:1px solid #1f2937}
+    h2{font-size:26px;margin:0 0 14px}
+    .grid{display:grid;gap:18px}
+    @media(min-width:900px){.grid.cols-2{grid-template-columns:1fr 1fr}}
+    .card{background:linear-gradient(180deg,#0b1022,#0f172a);border:1px solid #1f2937;border-radius:16px;padding:18px}
+    .card h3{margin:0 0 8px}
+    .muted{color:var(--muted)}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;padding:2px 6px;border:1px solid #334155;border-radius:6px;background:#0b1022}
+    .list{margin:0;padding-left:18px}
+    footer{padding:30px 0;color:var(--muted)}
+    .badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;border:1px solid #334155}
+
+    .video{aspect-ratio:16/9;width:100%;border-radius:12px;border:1px solid #334155;background:#0b1022}
+    .table{width:100%;border-collapse:collapse}
+    .table th,.table td{border-bottom:1px solid #243244;padding:10px;text-align:left}
+    .ok{color:var(--ok)}.warn{color:var(--warn)}
+    .code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#0b1022;padding:12px;border-radius:10px;border:1px solid #1f2937;overflow:auto}
+
+    /* nav single-line scrollable */
+    .nav ul{display:flex;gap:12px;list-style:none;margin:0;padding:0;flex-wrap:nowrap;white-space:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+    .nav ul::-webkit-scrollbar{display:none}
+    .nav nav{flex:1;min-width:0}
+    .nav .brand span{white-space:nowrap}
+    .nav .btn{flex-shrink:0}
+    @media(max-width:1100px){.nav ul{gap:10px;font-size:14px}.nav .btn{padding:8px 12px;border-radius:12px}.nav .brand{gap:8px}.nav .brand .logo{width:30px;height:30px}}
+    @media(max-width:820px){.nav ul{gap:8px;font-size:13px}.nav .brand span{display:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand"><div class="logo">VR</div><span>海洋声学虚拟仿真实验教学平台</span></div>
+      <nav>
+        <ul>
+          <li><a href="#overview">案例概览</a></li>
+          <li><a href="#activity">教学活动录像</a></li>
+          <li><a href="#materials">材料下载</a></li>
+          <li><a href="#features">案例特色与创新</a></li>
+          <li><a href="#objectives">目标与实施过程</a></li>
+          <li><a href="#effects">教学效果</a></li>
+          <li><a href="#reflection">总结与反思</a></li>
+          <li><a href="#team">团队与联系</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <span class="badge">案例展示 · 可直接部署</span>
+      <h1>海洋声学虚拟仿真实验教学平台：从物理建模到智能评估</h1>
+      <p>本网站公开展示案例核心材料：特色与创新、教学目标与实施、教学视频与证据材料等。所有外链遵循“免登录直达”与长期可访问要求。</p>
+      <div class="chips">
+        <span class="chip">免登录直达</span>
+        <span class="chip">1080p 简介视频</span>
+        <span class="chip">课堂实录 ≤ 50 分钟</span>
+        <span class="chip">PDF/MP4 可下载</span>
+      </div>
+    </section>
+
+    <section id="overview">
+      <h2>案例概览</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>案例名称</h3>
+          <p class="muted"><strong>海洋声学虚拟仿真实验教学平台：从物理建模到智能评估</strong></p>
+        </div>
+        <div class="card">
+          <h3>类别</h3>
+          <p class="muted">虚拟仿真实验教学</p>
+        </div>
+        <div class="card">
+          <h3>目标与难点</h3>
+          <p class="muted">将抽象的声呐传播原理具象化；突破实操条件受限；把控多设备协同探测复杂流程。</p>
+        </div>
+        <div class="card">
+          <h3>成效摘要</h3>
+          <p class="muted">学生实践与探究能力显著提升；教师双师型发展；课程链条完善；面向海洋国防与社会需求提供人才与技术服务。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <h2>案例特色与创新</h2>
+      <div class="card">
+        <ul class="list">
+          <li><strong>教学理念：</strong>虚实融合、数据驱动；以真实环境数据构建高精度场景，形成“数据—仿真—体验”一体化；支持多声呐协同与团队协作培养。</li>
+          <li><strong>教学内容：</strong>跨学科整合海洋声学、水声工程、计算机图形学与VR；覆盖性能预测、任务规划、信号级仿真等实战环节。</li>
+          <li><strong>教学设计：</strong>模块化分层（数据库/建模/仿真/任务管理），脚本化任务驱动，按需组合与动态调整教学场景。</li>
+          <li><strong>方式方法：</strong>Unity3D 沉浸式体验；参数实时调整与结果即时可视化，促进深度学习。</li>
+          <li><strong>考核评价：</strong>过程+结果并重，记录操作与协同行为数据，开展多维能力评估。</li>
+          <li><strong>技术手段：</strong>C++/MATLAB/Unity3D 混合编程，集成 BELLHOP 与 Perlin 海浪；自适应数据管理与编码式海洋数据库，实现声场计算—VR 渲染一体化。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="activity">
+      <h2>视频：案例简介与教学活动</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>案例简介视频（≤10分钟，1080p）</h3>
+          <div class="video">
+            <!-- 将 src 替换为 OSS/CDN 的 HTTPS 直链 -->
+            <video class="video" controls preload="metadata" poster="https://test1717.oss-cn-beijing.aliyuncs.com/cover.png">
+              <source src="https://test1717.oss-cn-beijing.aliyuncs.com/video1.mp4" type="video/mp4" />
+              <track src="https://cdn.example.com/subtitles/intro_zh.vtt" kind="subtitles" srclang="zh" label="简体中文">
+            </video>
+          </div>
+          <p class="muted">建议包含：系统概述、开展情况与成效、创新点与规划。</p>
+        </div>
+        <div class="card">
+          <h3>教学活动录像（≤50分钟）</h3>
+          <div class="video">
+            <video class="video" controls preload="metadata" poster="https://cdn.example.com/covers/activity.jpg">
+              <source src="https://cdn.example.com/videos/activity.mp4" type="video/mp4" />
+              <track src="https://cdn.example.com/subtitles/activity_zh.vtt" kind="subtitles" srclang="zh" label="简体中文">
+            </video>
+          </div>
+          <p class="muted">单节课堂实录或专题剪辑，展示教学组织、互动与评价。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="objectives">
+      <h2>目标与实施过程</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>教学重点</h3>
+          <ul class="list">
+            <li>声呐原理可视化：基于 BELLHOP 展示传播/反射/折射/散射。</li>
+            <li>多声呐协同：布设方案与流程脚本，观测设备状态与数据交互。</li>
+            <li>环境影响：温盐剖面、地形、海况对范围与精度的作用规律。</li>
+          </ul>
+          <h3>教学难点</h3>
+          <ul class="list">
+            <li>复杂声场计算的理解与仿真落地。</li>
+            <li>现实条件限制导致实操机会不足与情境单一。</li>
+            <li>多设备协同任务的流程把控与调度决策。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>教学目标</h3>
+          <p><strong>知识：</strong>掌握声呐原理、装备特性、协同方法与环境影响。</p>
+          <p><strong>能力：</strong>具备VR实验设计与操作、性能评估、协同布设与任务脚本设计、复杂场景问题求解。</p>
+          <p><strong>素养：</strong>科学态度与规范意识、团队协作、创新思维与海洋国防意识。</p>
+          <h3>环境建设</h3>
+          <ul class="list">
+            <li>硬件：按 VR 运行标准配置机房工位。</li>
+            <li>软件：VS2017、MATLAB R2022a、Unity3D 等；完成教学适配与引导。</li>
+            <li>资源库：实验指导书、课件、案例库、试题库与真实工程数据。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>教学活动设计</h3>
+          <ul class="list">
+            <li><strong>理论导入：</strong>数据与三维模型演示，问题驱动聚焦重点难点。</li>
+            <li><strong>虚拟实验：</strong>分层实施——基础（单装备）、综合（小组协同）、创新（自拟主题）。</li>
+            <li><strong>研讨提升：</strong>数据—理论对照讨论与辩论，强化表达与推理。</li>
+            <li><strong>考核评价：</strong>理论笔试 + 实操（方案/操作/采集/分析/报告）。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>教学方法与评价</h3>
+          <ul class="list">
+            <li>沉浸式、任务驱动、小组协作、案例与启发式教学综合运用。</li>
+            <li>过程性（40%）+ 终结性（60%）；教师评、同伴互评与自评结合；定量与定性并重。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="materials">
+      <h2>申报材料与下载</h2>
+      <div class="card">
+        <table class="table">
+          <thead>
+            <tr><th>材料名称</th><th>格式/大小</th><th>状态</th><th>操作</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>案例申报书（扫描件）</td>
+              <td>PDF（签字盖章后扫描）</td>
+              <td class="ok">已上传</td>
+              <td><a href="https://test1717.oss-cn-beijing.aliyuncs.com/%E6%96%87%E5%AD%97%E6%96%87%E7%A8%BF1.pdf" download>下载</a></td>
+            </tr>
+            <tr>
+              <td>案例简介视频</td>
+              <td>MP4 ≤500MB · 1080p</td>
+              <td class="warn">待上传</td>
+              <td><a href="#activity">去上传</a></td>
+            </tr>
+            <tr>
+              <td>教学活动录像</td>
+              <td>MP4 等常见格式 · ≤50分钟</td>
+              <td class="warn">待上传</td>
+              <td><a href="#activity">去上传</a></td>
+            </tr>
+            <tr>
+              <td>课程大纲/教学设计/教学日历</td>
+              <td>PDF/图片（≤5项）</td>
+              <td class="ok">已上传部分</td>
+              <td><a href="#objectives">查看</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted">提示：所有外链需保证在评审期间长期可访问；建议同时提供主站与镜像链接以提升稳定性。</p>
+    </section>
+
+    <section id="effects">
+      <h2>教学效果</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>学生能力培养</h3>
+          <ul class="list">
+            <li>在高逼真环境中反复实操，完成从参数调试到多设备协同与复杂情境应对。</li>
+            <li>形成“提出假设—设计实验—验证结论—优化方案”的探究闭环，强化数据分析与科学思维。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>教师专业发展</h3>
+          <ul class="list">
+            <li>教师从知识传授者转向实践引导者与资源开发者，优化递进式教学流程。</li>
+            <li>开展教学研究与资源共建，促进双师型团队建设与跨学科协作。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>专业建设与品牌</h3>
+          <ul class="list">
+            <li>完善“基础—仿真—应用”课程链，资源可共享与对外辐射。</li>
+            <li>建成“教学—科研—服务”综合平台，提升学科影响力与生源吸引力。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>社会服务与国防需求</h3>
+          <ul class="list">
+            <li>为调查机构与企业培养复合型人才，提供培训与方案虚拟验证。</li>
+            <li>支撑海洋国防训练与环境监测、资源开发等应用。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="reflection">
+      <h2>总结与反思</h2>
+      <div class="card">
+        <p>系统有效弥合理论与实践，显著提升实操能力与探究思维，但仍有优化空间：</p>
+        <ul class="list">
+          <li><strong>真实性提升：</strong>海浪-设备交互、复杂地形对声场的细节呈现需更逼真，避免认知偏差。</li>
+          <li><strong>学习行为引导：</strong>个别学生“重结果轻逻辑”，后续强化误差分析与过程追踪。</li>
+          <li><strong>技术与交互：</strong>提升老旧设备适配与帧率稳定性，补强多用户实时协同。</li>
+          <li><strong>评价优化：</strong>细化创新与协作量化指标，提升反馈闭环的针对性。</li>
+        </ul>
+        <p><strong>下一步：</strong>引入实时海洋数据接口与故障/突发模拟；建设“虚拟+实体”混合教学；推进轻量化与跨平台；与企业共建定制模块与“订单式”培养，深化产教协同。</p>
+      </div>
+    </section>
+
+    <section id="team">
+      <h2>团队与联系</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>案例负责人</h3>
+          <p class="muted">张俊明 / 教授 / 人工智能与自动化学院 / 邮箱：20241807@hhu.edu.cn / 手机：13905326066 / 通讯地址：河海大学（长荡湖校区）22号楼</p>
+        </div>
+        <div class="card">
+          <h3>团队成员</h3>
+          <ul class="list">
+            <li>王钟瑞</li>
+            <li>汪子豪</li>
+            <li>方文欣</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>部署与合规检查</h2>
+      <div class="card">
+        <ol class="list">
+          <li><strong>静态托管：</strong> 推荐 OSS 静态网站（自定义域名与 HTTPS）。</li>
+          <li><strong>文件结构：</strong> 部署 <span class="kbd">index.html</span> 与 <span class="kbd">/files</span>、<span class="kbd">/assets</span>（视频走云存储直链，H.264 + AAC）。</li>
+          <li><strong>可达性：</strong> 免登录访问；校内外皆可；保活至 <span class="kbd">2026/08</span>。</li>
+          <li><strong>版权合规：</strong> 素材版权、肖像权、音乐授权；涉密内容脱敏。</li>
+          <li><strong>性能与备份：</strong> 视频在线观看与下载双通道；主站 + 备用镜像。</li>
+        </ol>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 海洋声学虚拟仿真实验教学平台 · 案例网站模板。可用于本次活动提交与展示。</p>
+    </footer>
+  </main>
+</body>
+</html>
